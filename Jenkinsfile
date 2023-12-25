@@ -7,12 +7,6 @@ pipeline {
       }
     }
 
-    stage('stage2') {
-      steps {
-        pwsh(script: '$DEMO="alma"', returnStdout: true)
-      }
-    }
-
   }
   environment {
     DEMO = ''
