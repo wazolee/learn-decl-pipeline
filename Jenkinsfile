@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('stage1') {
       steps {
-        echo 'megy ez'
+        sh 'echo "megyez $BUILD_NUMBER $DEMO"'
       }
     }
 
   }
   environment {
-    DEMO = ''
+    DEMO = 'lama'
   }
 }
